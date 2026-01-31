@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Explorer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="default-bg">
+
+<main class="weather-app">
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>Weather Explorer</h1>
+        <p>Smart weather insights, real-time</p>
+    </header>
+
+    <!-- SEARCH + CONTROLS -->
+    <section class="search-box">
+        <input
+            id="cityInput"
+            type="text"
+            placeholder="Enter city or Indian state"
+            aria-label="Enter city or state">
+
+        <button id="searchBtn" aria-label="Search weather">
+            Get Weather
+        </button>
+    </section>
+
+    <!-- ACTION BAR -->
+    <section class="action-bar">
+        <button id="locateBtn" aria-label="Use current location">
+            📍 Use My Location
+        </button>
+
+        <button id="unitToggle" aria-label="Toggle temperature unit">
+            °C / °F
+        </button>
+    </section>
+
+    <!-- LOADING INDICATOR -->
+    <div id="loading" class="loading hidden" aria-live="polite">
+        Fetching weather data…
+    </div>
+
+    <!-- ALERT BANNER -->
+    <div id="alertBanner" class="alert hidden" role="alert"></div>
+
+    <!-- WEATHER DISPLAY -->
+    <section class="weather-display">
+
+        <!-- CURRENT WEATHER -->
+        <div class="current">
+            <div class="weather-icon" aria-label="Current weather icon">
+                <span id="weatherEffect" aria-hidden="true"></span>
+            </div>
+
+            <div class="weather-info">
+                <h2 id="cityLabel">City</h2>
+                <p id="tempLabel">-- °C</p>
+                <p id="descLabel">--</p>
+            </div>
+        </div>
+
+        <!-- WEATHER MOOD -->
+        <p id="weatherMood" class="mood-text">
+            <!-- Mood text injected by JS -->
+        </p>
+
+        <!-- EXTRA INFO -->
+        <div class="extra-info">
+            <p id="feelsLike">Feels like: -- °C</p>
+            <p id="humidity">Humidity: --%</p>
+            <p id="wind">Wind: -- km/h</p>
+        </div>
+
+        <!-- FORECAST -->
+        <div class="forecast-grid">
+
+            <div class="forecast-card">
+                <span class="day-name">Day</span>
+                <div class="icon" aria-label="Forecast weather icon"></div>
+                <span class="day-temp">-- °C</span>
+            </div>
+
+            <div class="forecast-card">
+                <span class="day-name">Day</span>
+                <div class="icon" aria-label="Forecast weather icon"></div>
+                <span class="day-temp">-- °C</span>
+            </div>
+
+            <div class="forecast-card">
+                <span class="day-name">Day</span>
+                <div class="icon" aria-label="Forecast weather icon"></div>
+                <span class="day-temp">-- °C</span>
+            </div>
+
+            <div class="forecast-card">
+                <span class="day-name">Day</span>
+                <div class="icon" aria-label="Forecast weather icon"></div>
+                <span class="day-temp">-- °C</span>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<div id="weatherAura" aria-hidden="true"></div>
+
+
+<script src="script.js"></script>
+</body>
+</html>

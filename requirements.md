@@ -1,15 +1,14 @@
 #  Requirements – Weather Explorer
+# Software Requirements – Weather Explorer
 
-## Hardware Requirements
-- Processor: Intel i3 or equivalent (or higher)
-- RAM: Minimum 4 GB
-- Storage: At least 200 MB free space
-- Internet Connection: Required for API access
+## Execution Environment
+- Devices with modern web browser
+- Active and fast internet connection for API access
 
 ## Software Requirements
-- Operating System: Windows 10 / Linux / macOS
+- Operating System: Windows, Linux, or macOS
 - Web Browser: Google Chrome, Mozilla Firefox, or Microsoft Edge
-- Code Editor: Visual Studio Code or any modern text editor
+- Code Editor: Visual Studio Code or any text editor (for development)
 
 ## Technologies Used
 - HTML5
@@ -18,16 +17,14 @@
 - OpenWeatherMap API
 
 ## Functional Requirements
-- Fetch and display real-time weather data
-- Display 4-day weather forecast
-- Support city and Indian state inputs
-- Change background based on weather conditions
-- Toggle temperature units (Celsius/Fahrenheit)
-- Detect user location using browser geolocation
-- Store last searched city locally
+- Display real-time weather information
+- Show multi-day weather forecast
+- Accept city and Indian state inputs
+- Update UI based on weather conditions
+- Allow temperature unit conversion
+
 
 ## Non-Functional Requirements
 - Responsive user interface
-- Fast data loading
-- Graceful error handling
-- Accessible and readable UI
+- Fast data retrieval
+

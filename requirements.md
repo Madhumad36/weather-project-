@@ -1,5 +1,4 @@
 #  Requirements – Weather Explorer
-# Software Requirements – Weather Explorer
 
 ## Execution Environment
 - Devices with modern web browser
